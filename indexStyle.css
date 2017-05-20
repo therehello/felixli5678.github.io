@@ -23,4 +23,14 @@ body {
 
 .contact {
     background-color: black;
+    height: 110px;
+}
+
+.contactTitle {
+    color: white;
+}
+
+.contactContent {
+    color: white;
+    text-align: center;
 }
