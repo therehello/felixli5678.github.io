@@ -1,3 +1,25 @@
 body {
     font-family: "Lato", sans-serif
 }
+
+.backgroundImage {
+    position: relative;
+    width: 100%;
+}
+
+.backgroundImageText {
+    color: white;
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 30%;
+    width: 100%
+}
+
+.backgroundImageText2 {
+    font-size: 700%;
+}
+
+.contact {
+    background-color: black;
+}
