@@ -1,12 +1,15 @@
+/* Font for the body of the webpage. */
 body {
     font-family: "Lato", sans-serif
 }
 
+/* Styling for the background image. */
 .backgroundImage {
     position: relative;
     width: 100%;
 }
 
+/* Styling for the background image text in front of it. */
 .backgroundImageText {
     color: white;
     left: 0;
@@ -16,6 +19,7 @@ body {
     width: 100%
 }
 
+/* Styling for links and the underline animation. */
 a {
     position: relative;
     color: white;
@@ -47,15 +51,17 @@ a:hover:before {
     transform: scaleX(1);
 }
 
+/* Styling for "moveMent" title in front of the webpage front image/gif. */
 .backgroundImageText2 {
     color: white;
     font-family: Avenir;
     font-size: 600%;
 }
 
+/* Styling for Contact section of the webpage. */
 .contact {
     background-color: black;
-    height: 110px;
+    height: 170px;
 }
 
 .contactTitle {
