@@ -12,12 +12,13 @@ body {
     left: 0;
     position:absolute;
     text-align:center;
-    top: 30%;
+    top: 40%;
     width: 100%
 }
 
 .backgroundImageText2 {
-    font-size: 700%;
+    font-family: Avenir;
+    font-size: 600%;
 }
 
 .contact {
