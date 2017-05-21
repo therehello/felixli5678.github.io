@@ -15,7 +15,7 @@ body {
     left: 0;
     position:absolute;
     text-align:center;
-    top: 40%;
+    top: 35%;
     width: 100%
 }
 
@@ -56,6 +56,31 @@ a:hover:before {
     color: white;
     font-family: Avenir;
     font-size: 600%;
+}
+
+/* Styling for the "v" in front of the webpage front image/gif. */
+.backgroundImageText3 {
+    font-style: normal;
+    color: white;
+    font-size: 500%;
+    opacity: .5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.backgroundImageText3:hover {
+    opacity: 1;
+}
+
+.backgroundImageText3Div {
+    color: white;
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 52%;
+    width: 100%
 }
 
 /* Styling for Contact section of the webpage. */

@@ -17,7 +17,7 @@
 <div class="w3-top">
     <div class="w3-bar w3-black w3-card-2">
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-small">moveMents</a>
+        <a href="#top" class="w3-bar-item w3-button w3-padding-large w3-hide-small">moveMents</a>
         <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
         <a href="movementsPage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MOVEMENTS</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
@@ -36,13 +36,26 @@
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
     <!-- Cover Image (Gif Background) -->
-    <div class="backgroundImage">
-        <img src="Images/civilRightsMovementGif.gif" style="width:100%" style="height:70%">
+    <div class="backgroundImage" id="top">
+        <div id="slideshow">
+            <div>
+                <img src="Images/civilRightsMovementGif.gif" style="width:100%" style="height:70%">
+            </div>
+            <!--<div>
+                <img src="images/civilRightsMovement2.gif" style="width:100%" style="height:70%">
+            </div>
+            <div>
+                <img src="images/womensMarch.gif" style="width:100%" style="height:70%">
+            </div>
+            <div>
+                <img src="images/womensMarch2.gif" style="width:100%" style="height:70%">
+            </div>-->
+        </div>
         <div class="backgroundImageText">
             <a href="#content" class="backgroundImageText2">moveMents</a>
         </div>
-        <div>
-            <a href="#content" class=""backgroundImageText3"></a>
+        <div class="backgroundImageText3Div">
+            <a href="#content" class="backgroundImageText3">v</a>
         </div>
     </div>
 
@@ -71,10 +84,12 @@
         <div class="contactContent">
             <p><i>Feel free to email us at felixli5678@gmail.com for any inquiries.
             <br>&copy; 2017<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, moveMents.</i></p>
+            <!--<p id="log"></p>
+            <script src="User.js"></script>-->
         </div>
     </div>
 
     <!-- End Page Content -->
 </div>
-</body>
+    </body>
 </html>
