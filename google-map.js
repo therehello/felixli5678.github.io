@@ -36,11 +36,15 @@ function initMap() {
     });
 }*/
 // Creates the map.
+/*var msg = "sdfsdfds";
+var el = document.getElementById("log");
+el.textContent = msg;*/
 var map, infoWindow;
+
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 0, lng: 0},
-        zoom: 12
+        zoom: 15
     });
     infoWindow = new google.maps.InfoWindow;
 
@@ -63,6 +67,13 @@ function initMap() {
         // Browser doesn't support Geolocation
         handleLocationError(false, infoWindow, map.getCenter());
     }
+
+    var pinLocation = {lat: User2.movements[0].location[0] /*42.359849*/, lng: User2.movements[0].location[1] /*-71.139784*/}
+    var startPosition = new google.maps.Marker({
+        position: pinLocation,
+        map: map,
+        title: User2.
+    });
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -74,9 +85,11 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 }
 
 // Plots the markers.
-var pinLocation = new google.maps.LatLng( , );
+//var pinLocation = new google.maps.LatLng(/*User2.movements.location[0]*/42.359849, /*User2.movements.location[1]*/-71.139784);
+/*var pinLocation = {lat: 42.359849, lng: -71.139784}
 var startPosition = new google.maps.Marker({
-    position: pinlocation,
-    map: venueMap,
-    icon: " "
-});
+    position: pinLocation,
+    map: map,
+    title: "Hello, world!",
+    icon: "maker.jpg"
+});*/
