@@ -50,7 +50,7 @@ function initMap() {
 
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
+        navigator.geolocation.getCurrentPosition(function (position) {
             var pos = {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
@@ -60,7 +60,7 @@ function initMap() {
             infoWindow.setContent('Location found.');
             infoWindow.open(map);
             map.setCenter(pos);
-        }, function() {
+        }, function () {
             handleLocationError(true, infoWindow, map.getCenter());
         });
     } else {
@@ -68,12 +68,42 @@ function initMap() {
         handleLocationError(false, infoWindow, map.getCenter());
     }
 
-    var pinLocation = {lat: User2.movements[0].location[0] /*42.359849*/, lng: User2.movements[0].location[1] /*-71.139784*/}
-    var startPosition = new google.maps.Marker({
-        position: pinLocation,
-        map: map,
-        title: User2.
-    });
+    //var pinLocation = {lat: User2.movements[0].location[0] /*42.359849*/, lng: User2.movements[0].location[1] /*-71.139784*/}
+    /*var startPosition = new google.maps.Marker({
+     position: pinLocation,
+     map: map,
+     title: User2.movements[0].name
+     });*/
+
+    //var pinLocation2 = {lat: User3.movements[0].location[0] /*42.359849*/, lng: User3.movements[0].location[1] /*-71.139784*/}
+    /*var startPosition2 = new google.maps.Marker({
+     position: pinLocation2,
+     map: map,
+     title: User3.movements[0].name
+     });*/
+
+    //var pinLocation3 = {lat: User3.movements[1].location[0] /*42.359849*/, lng: User3.movements[1].location[1] /*-71.139784*/}
+    /*var startPosition3 = new google.maps.Marker({
+     position: pinLocation3,
+     map: map,
+     title: User3.movements[1].name
+     });*/
+
+    var locations = [
+        [User2.movements[0].location[0], User2.movements[0].location[1], User2.movements[0].name],
+        [User3.movements[0].location[0], User3.movements[0].location[1], User3.movements[0].name],
+        [User3.movements[1].location[0], User3.movements[1].location[1], User3.movements[1].name]
+    ];
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+            map: map,
+            title: locations[i][2]
+        });
+    }
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
