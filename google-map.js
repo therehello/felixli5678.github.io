@@ -90,9 +90,10 @@ function initMap() {
      });*/
 
     var locations = [
-        [User2.movements[0].location[0], User2.movements[0].location[1], User2.movements[0].name, User2.movements[0].date],
-        [User3.movements[0].location[0], User3.movements[0].location[1], User3.movements[0].name, User3.movements[0].date],
-        [User3.movements[1].location[0], User3.movements[1].location[1], User3.movements[1].name, User3.movements[1].date]
+        //longitude, latitude, movement name, movement date
+        [User2.movements[0].location[0], User2.movements[0].location[1], User2.movements[0].name, User2.movements[0].date, "FightForWomenJustice.html"],
+        [User3.movements[0].location[0], User3.movements[0].location[1], User3.movements[0].name, User3.movements[0].date, "index.html"],
+        [User3.movements[1].location[0], User3.movements[1].location[1], User3.movements[1].name, User3.movements[1].date, "index.html"]
     ];
 
     var marker, i;
@@ -101,7 +102,8 @@ function initMap() {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][0], locations[i][1]),
             map: map,
-            title: locations[i][2] + " " + locations[i][3]
+            title: locations[i][2] + " " + locations[i][3],
+            //url: locations[i][4]
         });
     }
 }
