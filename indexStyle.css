@@ -11,6 +11,16 @@ li {
     font-size: 120%;
 }
 
+/*html, body {
+    height: 100%;
+    width: 100%;
+}*/
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
 /* Styling for the background image. */
 .backgroundImage {
     position: relative;

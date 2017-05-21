@@ -1,7 +1,13 @@
 .contentOfLogin {
     position: fixed;
     display: block;
-    top: 20px;
+    top: 50px;
     horiz-align: center;
     font-size: 200%;
+}
+
+#logInHeading {
+    position: fixed;
+    display: block;
+    top: 30px;
 }
