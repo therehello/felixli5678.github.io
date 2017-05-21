@@ -3,6 +3,14 @@ body {
     font-family: "Lato", sans-serif
 }
 
+p {
+    font-size: 120%;
+}
+
+li {
+    font-size: 120%;
+}
+
 /* Styling for the background image. */
 .backgroundImage {
     position: relative;
@@ -96,4 +104,14 @@ a:hover:before {
 .contactContent {
     color: white;
     text-align: center;
+}
+
+.list {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* Does nothing. */
+.listDiv {
+    left: 30%;
 }

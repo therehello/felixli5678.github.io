@@ -19,10 +19,9 @@ var User1 = new User("Ashley", "1234", [new Movement("none", "none", "none")]);
 var User2 = new User("Bob", "4321", [new Movement("Fight for Women Justice!", "A local walk in Cambridge organized by high school students.", "Cambridge, MA")]);
 var User3 = new User("Carl", "A1B2C3", [new Movement("Social Justice for the Unspoken", "A protest for those without a voice.", "Boston, MA"), new Movement("Animal Rights Walk", "A walk for the rights of animals!", "Malden, MA")]);
 
-var msg = "User1" + " " + User1.name + " " + User1.password + " " + User1.movements[0].name;
+var msg = "User1" + " " + User1.name + " " + User1.password + " " + User1.movements[0].name + " " + User1.movements[0].description + " " + User1.movements[0].location;
+//var msg2 = "user2" + ""
 var el = document.getElementById("log");
-/*var msg = "Hello world!";
-var el = document.getElementById("log");*/
 el.textContent = msg;
 
 // Present information based on the geo-location of the user.
