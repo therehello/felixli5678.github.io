@@ -31,3 +31,6 @@ var elTwo = document.getElementById("log3");
 elTwo.textContent = msg3;
 
 // Present information based on the geo-location of the user.
+// 1. Create a log-in system.
+// 2. Movement set up page.
+//    2a. Convert place to longitude and latitude.
